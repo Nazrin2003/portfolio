@@ -15,9 +15,9 @@
                 <h1 class="heading">Portfolio</h1>
 
                 <ul>
-                    <li><a href="#about">HOME</a></li>
-                    <li><a href="#">ABOUT</a></li>
-                    <li><a href="#">SKILLS</a></li>
+                    <li><a href="#home">HOME</a></li>
+                    <li><a href="#about">ABOUT</a></li>
+                    <li><a href="#skills">SKILLS</a></li>
                     <li><a href="#">MY PROJECTS</a></li>
                     <li><a href="#">CONTACT</a></li>
                 </ul>
@@ -35,6 +35,7 @@
             </div>
         </div>
     </section>
+
     <section class="about" id="about">
         <div class="about-img"><img src="images/img.jpg" style="width: 486px;"></div>
         <div class="about-det">
@@ -49,6 +50,93 @@
             </ul>
         </div>
     </section>
+
+    <section class="services" id="skills">
+        <div class="main-text">
+            <h2><span>Technological Skills</span>And Knowledge</h2>
+        </div>
+        <div class="services-content">
+            <div class="box">
+                <div class="s-icons">
+                    <i class="fas fa-file-word"></i>
+                </div>
+                <h3>Microsoft Office</h3>
+                <p>Skilled in MS Word ,Exel and powerpoint.</p>
+                
+            </div>
+
+            <div class="box">
+                <div class="s-icons">
+                    <i class="fas fa-code"></i>
+                </div>
+                <h3>Web Programming</h3>
+                <p>Skilled in using HTML,CSS,Java Script and PHP.</p>
+                
+            </div>
+
+            <div class="box">
+                <div class="s-icons">
+                    <i class="fas fa-laptop-code"></i> 
+                </div>
+                <h3>Programming Languages</h3>
+                <p>Knowledgable in programming languages like c,C++,Python.</p>
+                
+            </div>
+        </div>
+    </section>
+    
+    <section class="skills">
+        <h2>Other <span>Skills</span></h2>
+        <div class="container">
+            <div class="tabs">
+                <div class="tab" onclick="showContent(0, this)">Skills</div>
+                <div class="tab" onclick="showContent(1, this)">Languages</div>
+                <div class="tab" onclick="showContent(2, this)">Hobbies</div>
+                <div class="underline"></div>
+            </div>
+            <div class="content active-content" id="content-0">
+                <ul>
+                    <li>Communication</li>
+                    <li>Problem Solving</li>
+                    <li>Project Management</li>
+                </ul>
+            </div>
+            <div class="content" id="content-1">
+                <ul>
+                    <li>English</li>
+                    <li>Hindi</li>
+                    <li>Malayalam</li>
+                </ul>
+            </div>
+            <div class="content" id="content-2">
+                <ul>
+                    <li>Reading</li>
+                    <li>Drawing</li>
+                    <li>Listening to Music</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <script>
+        let tabs = document.querySelectorAll(".tab");
+        let contents = document.querySelectorAll(".content");
+        let underline = document.querySelector(".underline");
+
+        function showContent(index, element) {
+            contents.forEach((content, i) => {
+                content.classList.remove("active-content");
+                if (i === index) content.classList.add("active-content");
+            });
+
+            let tabWidth = element.offsetWidth;
+            let tabLeft = element.offsetLeft;
+            underline.style.width = `${tabWidth}px`;
+            underline.style.transform = `translateX(${tabLeft}px)`;
+        }
+
+        // Set default selection
+        showContent(0, tabs[0]);
+    </script>
 </body>
 
 </html>

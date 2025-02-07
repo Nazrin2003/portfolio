@@ -1,0 +1,23 @@
+Day 1: 06-02-2025
+
+Learned-
+HTML-->span,section
+CSS-->flex
+Implement-
+Created a navigation bar.
+Created an about section using list and used flex for display.
+Challenges-
+Implementing flex and applying styles in the about section.
+
+Day 1: 07-02-2025
+
+Learned-
+HTML-->using multiple div
+CSS-->creating a box,container
+javascript-->querySelector,add and remove content
+Implement-
+Created a box to fill technological skill details.
+Created a container and style it appropriately.
+Challenges-
+Found difficulty in arranging the width of the box.
+Implementing java script.
