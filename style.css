@@ -124,8 +124,8 @@ span {
     /* margin: 26px; */
     /* background-color: #001F3F;
     color: white; */
-    
-    display: flex; 
+
+    display: flex;
     background-color: #001F3F;
     color: white;
     height: 304hv;
@@ -226,6 +226,7 @@ span {
     font-size: 32px;
     margin-bottom: 20px;
 }
+
 .box h3 {
     font-size: 24px;
     font-weight: 600;
@@ -317,4 +318,204 @@ span {
     font-size: large;
     font-weight: 500;
     padding: 10px 16px;
+}
+
+/* ----------------projects------------------- */
+
+section.projects-section {
+    background-color: #001F3F;
+    color: #fff;
+    padding: 50px 120px;
+}
+
+.projects-section h2 {
+    font-size: 40px;
+    text-align: center;
+}
+
+.projects-section h2>span {
+    color: #FF6F61;
+}
+
+.projects-cards {
+    display: flex;
+    justify-content: center;
+}
+
+.projects-card-box {
+    width: 33.33%;
+    margin: 35px 10px;
+    padding: 33px;
+    /* background-color: #013468; */
+    border-radius: 5px;
+    transition: all 0.5s ease 0s;
+    background: linear-gradient(rgb(188 53 53 / 70%), rgb(37 34 94 / 73%));
+    ;
+}
+
+.projects-card-box:hover {
+    box-shadow: 3px 5px 20px #FF6F61;
+    transition: all 0.5s ease 0s;
+    transform: translateY(-2px);
+}
+
+.projects-card-box__icons>i {
+    font-size: 30px;
+    border-radius: 50%;
+    border: 1px solid #FF6F61;
+    padding: 20px;
+}
+
+.projects-card-box:hover .projects-card-box__icons>i {
+    color: #FF6F61;
+    background-color: #002142;
+    transition: all 0.5s ease 0s;
+}
+
+.projects-card-box__desc h4 {
+    font-size: 18px;
+    margin: 18px 0 10px 0;
+}
+
+.projects-card-box__desc p {
+    font-size: 14px;
+    color: #c4c4c4;
+}
+
+.projects-card-box__buttons {
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-dark-outlined {
+    background-color: #FF6F61;
+    color: white;
+    font-weight: 600;
+    border: 1px solid #FF6F61;
+    border-radius: 5px;
+}
+
+.projects-card-box__buttons button {
+    background-color: #0b3157;
+    padding: 12px 30px;
+}
+
+.projects-card-box__buttons button>a {
+    text-decoration: none;
+    font-size: 13px;
+    color: #fff;
+}
+
+.btn-dark-outlined:hover {
+    cursor: pointer;
+    background-color: #FF6F61;
+    color: rgb(255, 255, 255);
+    transition: 0.3s;
+}
+
+/* ---------------------------------Contact------------------------- */
+
+.contact {
+    background: #013468;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 2.5rem;
+}
+
+.contact-text{
+    padding: 40px;
+    padding-left: 170px;
+}
+
+.contact-text h4 {
+    color: white;
+    margin: 18px 0;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.contact-text h2 {
+    font-size: xxx-large;
+    line-height: 1;
+    color: #ffffff;
+}
+
+.contact-text p {
+    color: rgb(231, 230, 230);
+    font-size: medium;
+    line-height: 1.8;
+    margin-bottom: 30px;
+}
+
+.contact-form{
+    padding: 105px;
+}
+
+.link a {
+    text-decoration: none; 
+    color: #d3d8dd; 
+    font-weight: bold; 
+    font-size: medium;
+}
+
+.link a:hover {
+    color: #FF6F61; 
+}
+
+.contact-icons i {
+    height: 45px;
+    width: 45px;
+    color: #7f92fe;
+    font-size: 22px;
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    margin-right: 15px;
+    transition: all .45s ease;
+}
+
+.contact-icons i:hover {
+
+    color: #FF6F61;
+}
+
+.contact-form form {
+    position: relative;
+}
+
+.contact-form form input,
+form textarea {
+    width: 100%;
+    padding: 14px;
+    background: #011d38;
+    color: grey;
+    border: none;
+    outline: none;
+    font-size: 15px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.contact-form textarea {
+    resize: none;
+    height: 240px;
+}
+
+.contact-form .submit {
+    display: inline-block;
+    font-size: 16px;
+    background: #FF6F61;
+    color: white;
+    width: 160px;
+    transition: all .45s ease;
+}
+
+.contact-form .submit:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+    background-color: #7a3e39;
 }

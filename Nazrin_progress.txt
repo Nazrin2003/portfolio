@@ -9,6 +9,7 @@ Created an about section using list and used flex for display.
 Challenges-
 Implementing flex and applying styles in the about section.
 
+
 Day 1: 07-02-2025
 
 Learned-
@@ -21,3 +22,16 @@ Created a container and style it appropriately.
 Challenges-
 Found difficulty in arranging the width of the box.
 Implementing java script.
+
+
+Day 3: 09-02-2025
+
+Learned-
+HTML-->using forms
+CSS-->creating a gradient background
+Implement-
+Created a project section where project details are displayed inside a box .
+Created a contact section using forms.
+Challenges-
+Found difficulty in arranging the form.
+

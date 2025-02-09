@@ -9,7 +9,7 @@
 </head>
 
 <body>
-    <section id="home">
+    <section id="home" id="home">
         <div class="main">
             <div class="navbar">
                 <h1 class="heading">Portfolio</h1>
@@ -18,8 +18,8 @@
                     <li><a href="#home">HOME</a></li>
                     <li><a href="#about">ABOUT</a></li>
                     <li><a href="#skills">SKILLS</a></li>
-                    <li><a href="#">MY PROJECTS</a></li>
-                    <li><a href="#">CONTACT</a></li>
+                    <li><a href="#projects">MY PROJECTS</a></li>
+                    <li><a href="#contact">CONTACT</a></li>
                 </ul>
             </div>
             <div class="info">
@@ -62,7 +62,7 @@
                 </div>
                 <h3>Microsoft Office</h3>
                 <p>Skilled in MS Word ,Exel and powerpoint.</p>
-                
+
             </div>
 
             <div class="box">
@@ -71,20 +71,20 @@
                 </div>
                 <h3>Web Programming</h3>
                 <p>Skilled in using HTML,CSS,Java Script and PHP.</p>
-                
+
             </div>
 
             <div class="box">
                 <div class="s-icons">
-                    <i class="fas fa-laptop-code"></i> 
+                    <i class="fas fa-laptop-code"></i>
                 </div>
                 <h3>Programming Languages</h3>
                 <p>Knowledgable in programming languages like c,C++,Python.</p>
-                
+
             </div>
         </div>
     </section>
-    
+
     <section class="skills">
         <h2>Other <span>Skills</span></h2>
         <div class="container">
@@ -117,6 +117,82 @@
             </div>
         </div>
     </section>
+
+    <section class="projects-section" id="projects">
+        <h2>My <span>Projects</span></h2>
+        <div class="projects-cards">
+            <div class="projects-card-box">
+                <div class="projects-card-box__icons">
+                    <i class="fas fa-home"></i>
+                </div>
+                <div class="projects-card-box__desc">
+                    <h4>Homemade Goods Selling Website</h4>
+                    <p>An e-commerce website that is designed using HTML,
+                        CSS and Java Script for the front end and PHP and MySQL
+                        for backend development that specializes in the sale and purchase
+                        of homemade goods.
+                    </p>
+                </div>
+                <div class="projects-card-box__buttons">
+                    <button class="btn btn-dark-outlined">
+                        <a href="#">View <i class="fa-solid fa-external-link"></i></a>
+                    </button>
+                </div>
+            </div>
+            <div class="projects-card-box">
+                <div class="projects-card-box__icons">
+                    <i class="fas fa-car"></i>
+                </div>
+                <div class="projects-card-box__desc">
+                    <h4>Driving School Management Website</h4>
+                    <p>The website is built using HTML and CSS for the front end,
+                        and Python Django for the back end. It is designed to streamline
+                        the process of connecting students, driving schools, and private tutors,
+                        providing a user-friendly and efficient platform for all stakeholders
+                        involved in the driving education process.
+                    </p>
+                </div>
+                <div class="projects-card-box__buttons">
+                    <button class="btn btn-dark-outlined">
+                        <a href="#">View <i class="fa-solid fa-external-link"></i></a>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <div class="contact-text">
+            <h2>Contact <span>Me!</span></h2>
+            <h4>If you have any project in your mind.</h4>
+            <p>I'm a website Designer - creating bold & brave interface design for compaines all across the world.</p>
+            <div class="link">
+                <p><i class="fas fa-phone"></i> <a href="9547384237"> 1 234 567 890</a></p>
+                <p><i class="fas fa-envelope"></i> <a href="nazrinkfaizal@gmail.com"> nazrinkfaizal@gmail.com</a></p>
+            </div>
+
+            <div class="contact-icons">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-github"></i></a>
+            </div>
+
+        </div>
+        <div class="contact-form">
+            <form action="">
+                <input type="name" placeholder="Your Name " required>
+                <input type="email" placeholder="Your Email " required>
+                <input type="number" placeholder="your Mobile Number" required>
+                <textarea name="" id="" cols="35" rows="10" placeholder="How Can I Help You " required></textarea>
+                <input type="submit" value="Send Message" class="submit" required>
+            </form>
+
+        </div>
+    </section>
+
+
+
     <script>
         let tabs = document.querySelectorAll(".tab");
         let contents = document.querySelectorAll(".content");
